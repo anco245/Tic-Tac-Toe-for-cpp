@@ -21,8 +21,8 @@ private:
 	bool vertical(string s);
 	bool diagonal(string s);
 	string grid [3][3] = {{"-", "-", "-"},
-				 	 	  {"-", "-", "-"},
-						  {"-", "-", "-"}};
+			      {"-", "-", "-"},
+			      {"-", "-", "-"}};
 };
 
 #endif /* BOARD_H_ */
