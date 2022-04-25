@@ -5,7 +5,7 @@
 using namespace std;
 
 board::board() {
-	// TODO Auto-generated constructor stub
+// TODO Auto-generated constructor stub
 
 }
 
