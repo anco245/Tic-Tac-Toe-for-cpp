@@ -6,17 +6,18 @@
 using namespace std;
 
 int main() {
-
+	
 	string player1;
 	string player2;
 	string position;
 	string again = "y";
-	int count = 0;
-	board b;
 		
 	while(again=="y")
 	{
 		system("clear");
+		
+		int count = 0;
+		board b;
 
 		cout << "Do you want to be x or o?" << endl;
 		cin >> player1;
