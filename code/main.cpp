@@ -15,7 +15,7 @@ int main() {
 
 	board b;
 
-	//system("clear");
+	system("clear");
 
 	cout << "-------------TIK-TAC-TOE-------------" << endl;
 	cout << "|                                   |" << endl;
@@ -57,7 +57,7 @@ int main() {
 	cout << "-------------------------------------" << endl;
 	cout << endl;
 
-	//system("clear");
+	system("clear");
 
 	while(!b.winner())
 	{
@@ -119,10 +119,10 @@ int main() {
 			b.answer(stoi(position), player1);
 		}
 
-		//system("clear");
+		system("clear");
 	}
 
-	//system("clear");
+	system("clear");
 
 	cout << b.print() << endl;
 
