@@ -61,7 +61,7 @@ int main() {
 	
 	while(again=='y')
 	{
-		system("clear);
+		system("clear");
 		       
 		while(!b.winner())
 		{
