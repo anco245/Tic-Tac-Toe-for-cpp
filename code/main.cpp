@@ -13,9 +13,10 @@ int main() {
 	string again = "y";
 	int count = 0;
 	board b;
-
+		
 	while(again=="y")
 	{
+		system("clear")
 
 		cout << "-------------TIK-TAC-TOE-------------" << endl;
 		cout << "|                                   |" << endl;
