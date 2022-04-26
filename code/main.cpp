@@ -59,7 +59,7 @@ int main() {
 	//cout << "-------------------------------------" << endl;
 	//cout << endl;
 	
-	while(again=='y')
+	while(again=="y")
 	{
 		system("clear");
 		       
