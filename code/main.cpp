@@ -165,7 +165,7 @@ int main() {
 		cout << endl;
 		
 		cout << "Do you want to play again? (y/n)" << endl;
-		cin >> again
+		cin >> again;
 	}
 
 }
