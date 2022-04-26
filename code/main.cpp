@@ -9,58 +9,51 @@ int main() {
 
 	string player1;
 	string player2;
-
 	string position;
-	int count = 0;
-	
 	string again = "y";
-
+	int count = 0;
 	board b;
 
-	system("clear");
-
-	cout << "-------------TIK-TAC-TOE-------------" << endl;
-	cout << "|                                   |" << endl;
-	cout << "|               1 2 3               |" << endl;
-	cout << "|               4 5 6               |" << endl;
-	cout << "|               7 8 9               |" << endl;
-	cout << "|                                   |" << endl;
-	cout << "-------------------------------------" << endl;
-	cout << "|                                   |" << endl;
-	cout << "|            HOW TO PLAY:           |" << endl;
-	cout << "|   When it's your turn, pick the   |" << endl;
-	cout << "|    number that corresponds to     |" << endl;
-	cout << "|       the space you want.         |" << endl;
-	cout << "|                                   |" << endl;
-	cout << "-------------------------------------" << endl;
-
-	cout << endl;
-
-	cout << "Do you want to be x or o?" << endl;
-	cin >> player1;
-
-	while(player1 != "x" && player1 != "o")
-	{
-		cout << endl;
-		cout << "Selection has to be either x or o" << endl;
-		cout << "Try again" << endl;
-		cin >> player1;
-	}
-
-	if (player1 == "x")
-	{
-		player1 = "x";
-		player2 = "o";
-	} else if (player1 == "o"){
-		player1 = "o";
-		player2 = "x";
-	}
-
-	//cout << "-------------------------------------" << endl;
-	//cout << endl;
-	
 	while(again=="y")
 	{
+
+		cout << "-------------TIK-TAC-TOE-------------" << endl;
+		cout << "|                                   |" << endl;
+		cout << "|               1 2 3               |" << endl;
+		cout << "|               4 5 6               |" << endl;
+		cout << "|               7 8 9               |" << endl;
+		cout << "|                                   |" << endl;
+		cout << "-------------------------------------" << endl;
+		cout << "|                                   |" << endl;
+		cout << "|            HOW TO PLAY:           |" << endl;
+		cout << "|   When it's your turn, pick the   |" << endl;
+		cout << "|    number that corresponds to     |" << endl;
+		cout << "|       the space you want.         |" << endl;
+		cout << "|                                   |" << endl;
+		cout << "-------------------------------------" << endl;
+
+		cout << endl;
+
+		cout << "Do you want to be x or o?" << endl;
+		cin >> player1;
+
+		while(player1 != "x" && player1 != "o")
+		{
+			cout << endl;
+			cout << "Selection has to be either x or o" << endl;
+			cout << "Try again" << endl;
+			cin >> player1;
+		}
+
+		if (player1 == "x")
+		{
+			player1 = "x";
+			player2 = "o";
+		} else if (player1 == "o"){
+			player1 = "o";
+			player2 = "x";
+		}
+	
 		system("clear");
 		       
 		while(!b.winner())
