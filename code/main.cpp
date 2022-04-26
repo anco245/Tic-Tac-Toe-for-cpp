@@ -18,23 +18,6 @@ int main() {
 	{
 		system("clear");
 
-		cout << "-------------TIK-TAC-TOE-------------" << endl;
-		cout << "|                                   |" << endl;
-		cout << "|               1 2 3               |" << endl;
-		cout << "|               4 5 6               |" << endl;
-		cout << "|               7 8 9               |" << endl;
-		cout << "|                                   |" << endl;
-		cout << "-------------------------------------" << endl;
-		cout << "|                                   |" << endl;
-		cout << "|            HOW TO PLAY:           |" << endl;
-		cout << "|   When it's your turn, pick the   |" << endl;
-		cout << "|    number that corresponds to     |" << endl;
-		cout << "|       the space you want.         |" << endl;
-		cout << "|                                   |" << endl;
-		cout << "-------------------------------------" << endl;
-
-		cout << endl;
-
 		cout << "Do you want to be x or o?" << endl;
 		cin >> player1;
 
