@@ -16,7 +16,7 @@ int main() {
 		
 	while(again=="y")
 	{
-		system("clear")
+		system("clear");
 
 		cout << "-------------TIK-TAC-TOE-------------" << endl;
 		cout << "|                                   |" << endl;
