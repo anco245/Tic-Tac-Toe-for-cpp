@@ -41,7 +41,7 @@ int main() {
 	
 		system("clear");
 		       
-		while(!b.winner())
+		while(!b.winner(count))
 		{
 			count++;
 
