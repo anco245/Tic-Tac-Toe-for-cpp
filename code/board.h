@@ -11,7 +11,7 @@ public:
 	board();
 	string print();
 	bool isATie();
-	bool winner();
+	bool winner(int n);
 	bool occupied(int pos);
 	void answer(int pos, string player);
 	string winningPlayer;
