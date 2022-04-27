@@ -211,7 +211,7 @@ bool board::winner(int n) {
 			return true;
 
 		} else if (n==9){
-			if(isATie)
+			if(isATie())
 			{
 				return true;
 			} else {
