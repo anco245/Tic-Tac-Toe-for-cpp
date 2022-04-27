@@ -182,36 +182,47 @@ bool board::diagonal(string given)
 
 
 bool board::winner(int n) {
-
-	if(horizontal("x"))
+	
+	if(n>=2)
 	{
-		winningPlayer = "x";
-		return true;
+		if(horizontal("x"))
+		{
+			winningPlayer = "x";
+			return true;
 
-	} else if (horizontal("o")) {
-		winningPlayer = "o";
-		return true;
+		} else if (horizontal("o")) {
+			winningPlayer = "o";
+			return true;
 
-	} else if (vertical("x")) {
-		winningPlayer = "x";
-		return true;
+		} else if (vertical("x")) {
+			winningPlayer = "x";
+			return true;
 
-	} else if (vertical("o")) {
-		winningPlayer = "o";
-		return true;
+		} else if (vertical("o")) {
+			winningPlayer = "o";
+			return true;
 
-	} else if (diagonal("x")) {
-		winningPlayer = "x";
-		return true;
+		} else if (diagonal("x")) {
+			winningPlayer = "x";
+			return true;
 
-	} else if (diagonal("o")) {
-		winningPlayer = "o";
-		return true;
+		} else if (diagonal("o")) {
+			winningPlayer = "o";
+			return true;
 
-	} else if (isATie()){
-		return true;
+		} else if (n==8){
+			if(isATie)
+			{
+				return true;
+			} else {
+				return false;
+			}
 
+		} else {
+			return false;
+		}	
 	} else {
+		
 		return false;
 	}
 }
