@@ -181,7 +181,7 @@ bool board::diagonal(string given)
 }
 
 
-bool board::winner() {
+bool board::winner(int n) {
 
 	if(horizontal("x"))
 	{
