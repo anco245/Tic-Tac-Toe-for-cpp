@@ -183,7 +183,7 @@ bool board::diagonal(string given)
 
 bool board::winner(int n) {
 	
-	if(n>=2)
+	if(n>=3)
 	{
 		if(horizontal("x"))
 		{
@@ -210,7 +210,7 @@ bool board::winner(int n) {
 			winningPlayer = "o";
 			return true;
 
-		} else if (n==8){
+		} else if (n==9){
 			if(isATie)
 			{
 				return true;
