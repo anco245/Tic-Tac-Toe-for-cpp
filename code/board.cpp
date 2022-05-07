@@ -5,11 +5,10 @@
 using namespace std;
 
 board::board() {
-	// TODO Auto-generated constructor stub
 
 }
 
-
+// Determines if there's a tie by seeing if every cell is filled
 bool board::isATie(){
 	bool tie = true;
 
@@ -27,7 +26,7 @@ bool board::isATie(){
 	return tie;
 }
 
-
+// Determines if the given cell already has an answer in it
 bool board::occupied(int pos)
 {
 	switch(pos)
@@ -115,7 +114,7 @@ bool board::occupied(int pos)
 	}
 }
 
-
+// Determines if there's a winner along the 3 rows
 bool board::horizontal(string given)
 {
 	int inarow = 0;
@@ -141,7 +140,7 @@ bool board::horizontal(string given)
 	return false;
 }
 
-
+// Determines if there's a winner along the 3 columns
 bool board::vertical(string given)
 {
 	int inarow = 0;
@@ -167,7 +166,7 @@ bool board::vertical(string given)
 	return false;
 }
 
-
+// Determines if there's a winner on a diagnal
 bool board::diagonal(string given)
 {
 	if(grid[0][0] == given && grid[1][1] == given && grid[2][2] == given)
@@ -180,7 +179,7 @@ bool board::diagonal(string given)
 	}
 }
 
-
+// Dermines if there's a winner in the horizontal, vertical, or diagonal for each player
 bool board::winner(int n) {
 	
 	if(n>=3)
@@ -227,7 +226,7 @@ bool board::winner(int n) {
 	}
 }
 
-
+// Inserts either an x or an o into the given cell, depending on who's turn it is
 void board::answer(int pos, string player)
 {
 
@@ -272,7 +271,7 @@ void board::answer(int pos, string player)
 
 }
 
-
+// Prints the board
 string board::print() {
 	string str = "";
 
